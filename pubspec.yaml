@@ -1,0 +1,35 @@
+name: medica
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  camera: ^0.10.0+4
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_emoji: ^2.4.0
+  get: ^4.6.5
+  google_fonts: ^3.0.1
+  google_nav_bar: ^5.0.6
+  heroicons: ^0.7.0
+  hexcolor: ^3.0.1
+  responsive_sizer: ^3.1.1
+
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/Images/ 
