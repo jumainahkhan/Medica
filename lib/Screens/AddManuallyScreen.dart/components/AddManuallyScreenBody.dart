@@ -9,6 +9,8 @@ import 'package:medica/Screens/AddManuallyScreen.dart/components/buildMedDetail.
 import 'package:medica/Screens/AddManuallyScreen.dart/components/buildVisitDetail.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../../Controller/UserDataController.dart';
+
 class AddManuallyScreenBody extends StatefulWidget {
   const AddManuallyScreenBody({super.key});
 
@@ -18,6 +20,7 @@ class AddManuallyScreenBody extends StatefulWidget {
 
 class _AddManuallyScreenBodyState extends State<AddManuallyScreenBody> {
   MedLogController medLogController = Get.put(MedLogController());
+  UserDataController userDataController = Get.put(UserDataController());
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -30,26 +33,48 @@ class _AddManuallyScreenBodyState extends State<AddManuallyScreenBody> {
             child: buildForm(),
           ),
         ),
-        Container(
-            color: HexColor('#6d69f0'),
-            height: 55,
-            width: double.infinity,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.save,
-                  color: Colors.white,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  "Save",
-                  style: GoogleFonts.poppins(fontSize: 17, color: Colors.white),
-                ),
+        GestureDetector(
+          onTap: () {
+            Map<String, dynamic> prescription = {
+              'clinic': 'Saif Clinic',
+              'dname': 'Dr. Saif',
+              'djob': 'Dermatologist',
+              'date': '12/12/2020',
+              'reasonforvisit': 'Skin Rash ',
+              'medicines': [
+                {
+                  'name': 'Medicine1',
+                  'morning': 'yes',
+                  'afternoon': 'no',
+                  'night': 'yes'
+                }
               ],
-            ))
+            };
+            userDataController.addPrescription(prescription);
+            Navigator.pop(context);
+          },
+          child: Container(
+              color: HexColor('#6d69f0'),
+              height: 55,
+              width: double.infinity,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.save,
+                    color: Colors.white,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    "Save",
+                    style:
+                        GoogleFonts.poppins(fontSize: 17, color: Colors.white),
+                  ),
+                ],
+              )),
+        )
       ],
     );
   }
