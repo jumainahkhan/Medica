@@ -39,28 +39,28 @@ class _CategoriesScreenBodyState extends State<CategoriesScreenBody> {
       'dname': 'Dr. John Smith',
       'djob': 'Dermatologist',
       'date': '12/12/2020',
-      'reasonforvisit': 'Skin Rash and butt rash',
+      'reasonforvisit': 'Skin Rash ',
     },
     {
       'clinic': 'Wellness Clinic',
       'dname': 'Dr. Rita Lancaster',
       'djob': 'Orthopaedic Surgeon',
       'date': '12/12/2020',
-      'reasonforvisit': 'Skin Rash',
+      'reasonforvisit': 'Fracture',
     },
     {
       'clinic': 'Medsy Clinic',
       'dname': 'Dr. Piya Mitra',
       'djob': 'Gynaecologist',
       'date': '12/12/2020',
-      'reasonforvisit': 'Skin Rash',
+      'reasonforvisit': 'Ultrasound',
     },
     {
       'clinic': 'Medal Clinic',
       'dname': 'Dr. Sanjay Malhotra',
-      'djob': 'Gynaecologist',
+      'djob': 'Physician',
       'date': '12/12/2020',
-      'reasonforvisit': 'Skin Rash ',
+      'reasonforvisit': 'Fever ',
     },
   ];
   int randInt() {

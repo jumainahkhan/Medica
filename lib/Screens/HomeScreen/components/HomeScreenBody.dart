@@ -219,7 +219,7 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     const Icon(
-                                      Icons.accessibility,
+                                      CupertinoIcons.bandage,
                                       size: 40,
                                       color: Colors.white,
                                     ),
@@ -240,12 +240,21 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                                         fontWeight: FontWeight.w600,
                                       ),
                                     ),
-                                    Text(
-                                      'Medicines',
-                                      style: GoogleFonts.poppins(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w600,
-                                      ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          'Medicines',
+                                          style: GoogleFonts.poppins(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 1.w,
+                                        ),
+                                        const Icon(CupertinoIcons.arrow_right,
+                                            size: 25, color: Colors.white),
+                                      ],
                                     ),
                                   ],
                                 ),
@@ -269,7 +278,7 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(11),
+                          padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -281,7 +290,7 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                                     'Today\'s Meds',
                                     style: GoogleFonts.poppins(
                                       color: Colors.white,
-                                      fontSize: 17,
+                                      fontSize: 16,
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
@@ -312,8 +321,8 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                                 style: GoogleFonts.lato(
                                     color: Colors.white, fontSize: 15),
                               ),
-                              const SizedBox(
-                                height: 29,
+                              SizedBox(
+                                height: 4.h,
                               ),
                               Center(
                                 child: ElevatedButton(
@@ -415,47 +424,88 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                             borderRadius: BorderRadius.circular(20)),
                         child: Padding(
                           padding: const EdgeInsets.all(10),
-                          child: Column(
+                          child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
-                                child: Text('Last Check up',
-                                    textAlign: TextAlign.start,
-                                    style: GoogleFonts.poppins(
-                                      fontSize: 14,
-                                      color: HexColor('#f3d39a'),
-                                      fontWeight: FontWeight.w600,
-                                    )),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                    child: Text('Last \nCheck up',
+                                        textAlign: TextAlign.start,
+                                        style: GoogleFonts.poppins(
+                                          fontSize: 11,
+                                          color: HexColor('#f3d39a'),
+                                          fontWeight: FontWeight.w600,
+                                        )),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                    child: Column(
+                                      children: [
+                                        Text('09-10',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.poppins(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w600,
+                                            )),
+                                        Text('2022',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.poppins(
+                                              fontSize: 10,
+                                              fontWeight: FontWeight.w600,
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                ],
                               ),
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
-                                child: Text('09-10-2021',
-                                    textAlign: TextAlign.start,
-                                    style: GoogleFonts.poppins(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w600,
-                                    )),
+                              const VerticalDivider(
+                                color: Colors.black,
+                                thickness: 1,
+                                indent: 10,
+                                endIndent: 10,
                               ),
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
-                                child: Text('Next Check up',
-                                    textAlign: TextAlign.start,
-                                    style: GoogleFonts.poppins(
-                                      fontSize: 14,
-                                      color: HexColor('#f3d39a'),
-                                      fontWeight: FontWeight.w600,
-                                    )),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
-                                child: Text('09-10-2021',
-                                    textAlign: TextAlign.start,
-                                    style: GoogleFonts.poppins(
-                                      fontSize: 11,
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w600,
-                                    )),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                    child: Text('Next \nCheck up',
+                                        textAlign: TextAlign.start,
+                                        style: GoogleFonts.poppins(
+                                          fontSize: 11,
+                                          color: HexColor('#f3d39a'),
+                                          fontWeight: FontWeight.w600,
+                                        )),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                    child: Column(
+                                      children: [
+                                        Text('09-10',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.poppins(
+                                              fontSize: 20,
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.w600,
+                                            )),
+                                        Text('2022',
+                                            textAlign: TextAlign.start,
+                                            style: GoogleFonts.poppins(
+                                              fontSize: 10,
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.w600,
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
