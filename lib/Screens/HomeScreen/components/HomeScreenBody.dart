@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:heroicons/heroicons.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:medica/Controller/NavBarController.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:flutter_emoji/flutter_emoji.dart';
 
@@ -16,6 +18,8 @@ class HomeScreenBody extends StatefulWidget {
 class _HomeScreenBodyState extends State<HomeScreenBody> {
   var parser = EmojiParser();
   var doctor = ('doctor' '👨‍⚕️');
+
+  NavBarController navBarController = Get.put(NavBarController());
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -128,7 +132,9 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                             ),
                             Center(
                               child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  navBarController.changeIndex(1);
+                                },
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: HexColor('#f3d39a'),
                                   shape: RoundedRectangleBorder(
@@ -193,7 +199,7 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        debugPrint('clicked');
                       },
                       child: Container(
                         height: 22.h,
