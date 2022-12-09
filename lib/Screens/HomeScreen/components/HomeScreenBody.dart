@@ -270,84 +270,87 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                   ),
                   Column(
                     children: [
-                      Container(
-                        height: 27.h,
-                        width: 45.w,
-                        decoration: BoxDecoration(
-                          color: HexColor('#6d69f0'),
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    'Today\'s Meds',
-                                    style: GoogleFonts.poppins(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w600,
+                      GestureDetector(
+                        onTap: () {},
+                        child: Container(
+                          height: 27.h,
+                          width: 45.w,
+                          decoration: BoxDecoration(
+                            color: HexColor('#6d69f0'),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      'Today\'s Meds',
+                                      style: GoogleFonts.poppins(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                      ),
                                     ),
-                                  ),
-                                  const Icon(Icons.chevron_right,
-                                      color: Colors.white, size: 25),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 8,
-                              ),
-                              Text(
-                                'Paracetamol',
-                                style: GoogleFonts.lato(
-                                    color: Colors.white, fontSize: 15),
-                              ),
-                              Text(
-                                'Cetrizine',
-                                style: GoogleFonts.lato(
-                                    color: Colors.white, fontSize: 15),
-                              ),
-                              Text(
-                                'Dolo 650',
-                                style: GoogleFonts.lato(
-                                    color: Colors.white, fontSize: 15),
-                              ),
-                              Text(
-                                'Ibuprofen',
-                                style: GoogleFonts.lato(
-                                    color: Colors.white, fontSize: 15),
-                              ),
-                              SizedBox(
-                                height: 4.h,
-                              ),
-                              Center(
-                                child: ElevatedButton(
-                                  onPressed: () {},
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20),
+                                    const Icon(Icons.chevron_right,
+                                        color: Colors.white, size: 25),
+                                  ],
+                                ),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  'Paracetamol',
+                                  style: GoogleFonts.lato(
+                                      color: Colors.white, fontSize: 15),
+                                ),
+                                Text(
+                                  'Cetrizine',
+                                  style: GoogleFonts.lato(
+                                      color: Colors.white, fontSize: 15),
+                                ),
+                                Text(
+                                  'Dolo 650',
+                                  style: GoogleFonts.lato(
+                                      color: Colors.white, fontSize: 15),
+                                ),
+                                Text(
+                                  'Ibuprofen',
+                                  style: GoogleFonts.lato(
+                                      color: Colors.white, fontSize: 15),
+                                ),
+                                SizedBox(
+                                  height: 4.h,
+                                ),
+                                Center(
+                                  child: ElevatedButton(
+                                    onPressed: () {},
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: Colors.white,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
                                     ),
-                                  ),
-                                  child: SizedBox(
-                                    width: 90,
-                                    child: Text(
-                                      'See More',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.lato(
-                                        color: HexColor('#6d69f0'),
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.bold,
+                                    child: SizedBox(
+                                      width: 90,
+                                      child: Text(
+                                        'See More',
+                                        textAlign: TextAlign.center,
+                                        style: GoogleFonts.lato(
+                                          color: HexColor('#6d69f0'),
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
