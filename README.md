@@ -27,3 +27,7 @@ Medica will allow users to scan their prescription which will generate the data 
 |:--------------------------------------------:|:------------------------------------------:| :-----------------------------------------:|
 | ![DailyMeds1](Screenshots/DailyMeds1.png)   | ![DailyMeds2](Screenshots/DailyMeds2.png)      | ![DailyMeds3](Screenshots/DailyMeds3.png) |
 
+
+## Disclaimer
+
+All the users data are stored only locally and no information is shared across the internet. 
