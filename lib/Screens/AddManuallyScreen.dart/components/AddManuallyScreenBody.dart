@@ -21,6 +21,8 @@ class AddManuallyScreenBody extends StatefulWidget {
 class _AddManuallyScreenBodyState extends State<AddManuallyScreenBody> {
   MedLogController medLogController = Get.put(MedLogController());
   UserDataController userDataController = Get.put(UserDataController());
+  final formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -35,23 +37,31 @@ class _AddManuallyScreenBodyState extends State<AddManuallyScreenBody> {
         ),
         GestureDetector(
           onTap: () {
-            Map<String, dynamic> prescription = {
-              'clinic': 'Saif Clinic',
-              'dname': 'Dr. Saif',
-              'djob': 'Dermatologist',
-              'date': '12/12/2020',
-              'reasonforvisit': 'Skin Rash ',
-              'medicines': [
-                {
-                  'name': 'Medicine1',
-                  'morning': 'yes',
-                  'afternoon': 'no',
-                  'night': 'yes'
-                }
-              ],
-            };
-            userDataController.addPrescription(prescription);
-            Navigator.pop(context);
+            // Map<String, dynamic> prescription = {
+            //   'clinic': 'Saif Clinic',
+            //   'dname': 'Dr. Saif',
+            //   'djob': 'Dermatologist',
+            //   'date': '12/12/2020',
+            //   'reasonforvisit': 'Skin Rash ',
+            //   'medicines': [
+            //     {
+            //       'name': 'Medicine1',
+            //       'morning': 'yes',
+            //       'afternoon': 'no',
+            //       'night': 'yes'
+            //     }
+            //   ],
+            // };
+            // userDataController.addPrescription(prescription);
+            // Navigator.pop(context);
+            if (formKey.currentState!.validate()) {
+              // If the form is valid, display a snackbar. In the real world,
+              // you'd often call a server or save the information in a database.
+              userDataController.addPrescription();
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('Processing Data')),
+              );
+            }
           },
           child: Container(
               color: HexColor('#6d69f0'),
@@ -113,32 +123,35 @@ class _AddManuallyScreenBodyState extends State<AddManuallyScreenBody> {
   buildForm() {
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "Log Prescription",
-                style: GoogleFonts.poppins(
-                  fontSize: 24,
-                  color: HexColor('#6d69f0'),
-                  fontWeight: FontWeight.w600,
+      child: Form(
+        key: formKey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Log Prescription",
+                  style: GoogleFonts.poppins(
+                    fontSize: 24,
+                    color: HexColor('#6d69f0'),
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          buildVisitDetail(),
-          const SizedBox(
-            height: 30,
-          ),
-          buildMedDetail(),
-          //buildMedDetail()
-        ],
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            buildVisitDetail(),
+            const SizedBox(
+              height: 30,
+            ),
+            buildMedDetail(),
+            //buildMedDetail()
+          ],
+        ),
       ),
     );
   }

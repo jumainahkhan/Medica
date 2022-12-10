@@ -3,40 +3,17 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:medica/Controller/MedLogController.dart';
+import 'package:medica/Controller/UserDataController.dart';
 
 Column buildMedDetail() {
   MedLogController medLogController = Get.put(MedLogController());
+  bool morning = false;
+  bool afternoon = false;
+  bool night = false;
+
   return Column(
     children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            "Medicine Details",
-            style: GoogleFonts.lato(
-              fontSize: 18,
-              color: HexColor('#6d69f0'),
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          Row(
-            children: const [
-              Text("M"),
-              SizedBox(
-                width: 40,
-              ),
-              Text("A"),
-              SizedBox(
-                width: 40,
-              ),
-              Text("N"),
-              SizedBox(
-                width: 30,
-              ),
-            ],
-          )
-        ],
-      ),
+      header(),
       const SizedBox(
         height: 10,
       ),
@@ -46,6 +23,7 @@ Column buildMedDetail() {
             itemCount: medLogController.medCount,
             itemBuilder: (context, index) {
               return Container(
+                key: UniqueKey(),
                 width: double.infinity,
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
@@ -56,7 +34,16 @@ Column buildMedDetail() {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
-                              child: TextField(
+                              child: TextFormField(
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Please enter some text';
+                              }
+                              return null;
+                            },
+                            onChanged: (value) {
+                              medLogController.setName(value);
+                            },
                             decoration: InputDecoration(
                               hintText: 'Medicine Name',
                               hintStyle: GoogleFonts.lato(
@@ -69,16 +56,25 @@ Column buildMedDetail() {
                             ),
                           )),
                           Checkbox(
-                            value: false,
-                            onChanged: (value) {},
+                            value: morning,
+                            onChanged: (value) {
+                              morning = value!;
+                              medLogController.setMorning(value!);
+                            },
                           ),
                           Checkbox(
-                            value: false,
-                            onChanged: (value) {},
+                            value: afternoon,
+                            onChanged: (value) {
+                              afternoon = value!;
+                              medLogController.setAfternoon(value!);
+                            },
                           ),
                           Checkbox(
-                            value: false,
-                            onChanged: (value) {},
+                            value: night,
+                            onChanged: (value) {
+                              night = value!;
+                              medLogController.setNight(value!);
+                            },
                           ),
                         ],
                       ),
@@ -128,6 +124,38 @@ Column buildMedDetail() {
                 medLogController.decrementMedCount();
               },
               child: Icon(Icons.remove))
+        ],
+      )
+    ],
+  );
+}
+
+Row header() {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+      Text(
+        "Medicine Details",
+        style: GoogleFonts.lato(
+          fontSize: 18,
+          color: HexColor('#6d69f0'),
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+      Row(
+        children: const [
+          Text("M"),
+          SizedBox(
+            width: 40,
+          ),
+          Text("A"),
+          SizedBox(
+            width: 40,
+          ),
+          Text("N"),
+          SizedBox(
+            width: 30,
+          ),
         ],
       )
     ],
