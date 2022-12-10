@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:medica/Controller/UserDataController.dart';
 
 Column buildVisitDetail() {
+  UserDataController userDataController = Get.put(UserDataController());
   return Column(
     children: [
       Row(
@@ -33,7 +36,16 @@ Column buildVisitDetail() {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
-                      child: TextField(
+                      child: TextFormField(
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Please enter some text';
+                      }
+                      return null;
+                    },
+                    onChanged: (value) {
+                      userDataController.setDate(value);
+                    },
                     decoration: InputDecoration(
                       hintText: 'Enter the date of your visit',
                       hintStyle: GoogleFonts.lato(
@@ -62,14 +74,24 @@ Column buildVisitDetail() {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
-                      child: TextField(
+                      child: TextFormField(
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please enter some text';
+                            }
+                            return null;
+                          },
+                          onChanged: (value) {
+                            userDataController.setDname(value);
+                          },
                           decoration: InputDecoration(
-                    hintText: 'Name of the doctor',
-                    hintStyle: GoogleFonts.lato(
-                        fontSize: 18, fontWeight: FontWeight.w500),
-                    border: InputBorder.none,
-                    icon: Icon(Icons.person, color: HexColor('#6d69f0')),
-                  )))
+                            hintText: 'Name of the doctor',
+                            hintStyle: GoogleFonts.lato(
+                                fontSize: 18, fontWeight: FontWeight.w500),
+                            border: InputBorder.none,
+                            icon:
+                                Icon(Icons.person, color: HexColor('#6d69f0')),
+                          )))
                 ],
               ),
               const Divider(
@@ -84,15 +106,24 @@ Column buildVisitDetail() {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
-                      child: TextField(
+                      child: TextFormField(
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please enter some text';
+                            }
+                            return null;
+                          },
+                          onChanged: (value) {
+                            userDataController.setClinic(value);
+                          },
                           decoration: InputDecoration(
-                    hintText: 'Name of the clinic',
-                    hintStyle: GoogleFonts.lato(
-                        fontSize: 18, fontWeight: FontWeight.w500),
-                    border: InputBorder.none,
-                    icon: Icon(Icons.local_hospital_outlined,
-                        color: HexColor('#6d69f0')),
-                  )))
+                            hintText: 'Name of the clinic',
+                            hintStyle: GoogleFonts.lato(
+                                fontSize: 18, fontWeight: FontWeight.w500),
+                            border: InputBorder.none,
+                            icon: Icon(Icons.local_hospital_outlined,
+                                color: HexColor('#6d69f0')),
+                          )))
                 ],
               ),
               const Divider(
@@ -107,15 +138,24 @@ Column buildVisitDetail() {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
-                      child: TextField(
+                      child: TextFormField(
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please enter some text';
+                            }
+                            return null;
+                          },
+                          onChanged: (value) {
+                            userDataController.setReasonforvisit(value);
+                          },
                           decoration: InputDecoration(
-                    hintText: 'Reason of Visit',
-                    hintStyle: GoogleFonts.lato(
-                        fontSize: 18, fontWeight: FontWeight.w500),
-                    border: InputBorder.none,
-                    icon:
-                        Icon(Icons.question_answer, color: HexColor('#6d69f0')),
-                  )))
+                            hintText: 'Reason of Visit',
+                            hintStyle: GoogleFonts.lato(
+                                fontSize: 18, fontWeight: FontWeight.w500),
+                            border: InputBorder.none,
+                            icon: Icon(Icons.question_answer,
+                                color: HexColor('#6d69f0')),
+                          )))
                 ],
               ),
             ],
