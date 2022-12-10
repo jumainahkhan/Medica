@@ -124,7 +124,7 @@ class _ProfileScreenBodyState extends State<ProfileScreenBody> {
                     height: 1.h,
                   ),
                   Text(
-                    'John Doe',
+                    'Ranveer Bhatia',
                     style: GoogleFonts.poppins(
                       color: Colors.white,
                       fontSize: 19.sp,

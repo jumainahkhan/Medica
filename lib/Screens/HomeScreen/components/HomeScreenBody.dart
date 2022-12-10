@@ -6,6 +6,7 @@ import 'package:heroicons/heroicons.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:medica/Controller/NavBarController.dart';
 import 'package:medica/Screens/TodaysMedScreen/TodaysMedScreen.dart';
+import 'package:medica/Screens/LearnMore/LearnMore.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:flutter_emoji/flutter_emoji.dart';
 
@@ -200,7 +201,10 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        debugPrint('clicked');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const LearnMore()));
                       },
                       child: Container(
                         height: 22.h,
