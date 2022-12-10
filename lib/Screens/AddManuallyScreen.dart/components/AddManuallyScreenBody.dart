@@ -37,11 +37,11 @@ class _AddManuallyScreenBodyState extends State<AddManuallyScreenBody> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
+                const Icon(
                   Icons.save,
                   color: Colors.white,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Text(

@@ -106,8 +106,8 @@ Column buildMedDetail() {
               onTap: () {
                 medLogController.incrementMedCount();
               },
-              child: Icon(Icons.add)),
-          SizedBox(
+              child: const Icon(Icons.add)),
+          const SizedBox(
             width: 10,
           ),
           GetBuilder<MedLogController>(builder: (context) {
@@ -120,14 +120,14 @@ Column buildMedDetail() {
               ),
             );
           }),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           GestureDetector(
               onTap: () {
                 medLogController.decrementMedCount();
               },
-              child: Icon(Icons.remove))
+              child: const Icon(Icons.remove))
         ],
       )
     ],
