@@ -26,7 +26,9 @@ class _PrescriptionDetailsState extends State<PrescriptionDetails> {
               children: [
                 IconButton(
                   icon: const Icon(Icons.arrow_back_ios),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                 ),
               ],
             ),

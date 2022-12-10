@@ -126,7 +126,7 @@ class _ScanScreenBodyState extends State<ScanScreenBody> {
                 height: 70,
                 width: 70,
                 decoration: BoxDecoration(
-                    color: HexColor("79d5b0"), shape: BoxShape.circle),
+                    color: HexColor('#6d69f0'), shape: BoxShape.circle),
               ),
               Positioned.fill(
                 child: Align(
@@ -158,7 +158,7 @@ class _ScanScreenBodyState extends State<ScanScreenBody> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: Colors.transparent,
-              border: Border.all(color: HexColor("79d5b0"), width: 2),
+              border: Border.all(color: HexColor('#6d69f0'), width: 2),
             ),
             child: Center(
                 child: Row(
@@ -166,7 +166,7 @@ class _ScanScreenBodyState extends State<ScanScreenBody> {
               children: [
                 Icon(
                   Icons.upload,
-                  color: HexColor("79d5b0"),
+                  color: HexColor('#6d69f0'),
                 ),
                 Text(
                   "Manually",
@@ -174,7 +174,7 @@ class _ScanScreenBodyState extends State<ScanScreenBody> {
                   style: GoogleFonts.lato(
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
-                      color: HexColor("79d5b0")),
+                      color: HexColor('#6d69f0')),
                 ),
               ],
             )),
@@ -210,7 +210,7 @@ class _ScanScreenBodyState extends State<ScanScreenBody> {
           style: GoogleFonts.lato(
               fontSize: 20,
               fontWeight: FontWeight.w600,
-              color: Colors.grey[850]),
+              color: HexColor('#6d69f0')),
         ),
         SizedBox(
           width: 60,

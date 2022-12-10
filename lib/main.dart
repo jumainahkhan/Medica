@@ -1,7 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:medica/NavBarActivity.dart';
-import 'package:medica/Screens/AddManuallyScreen.dart/AddManuallyScreen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 late List<CameraDescription> cameras;
