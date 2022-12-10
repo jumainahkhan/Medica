@@ -7,6 +7,7 @@ import 'package:medica/Controller/UserDataController.dart';
 
 Column buildMedDetail() {
   MedLogController medLogController = Get.put(MedLogController());
+  String? medName;
   bool morning = false;
   bool afternoon = false;
   bool night = false;
@@ -35,14 +36,14 @@ Column buildMedDetail() {
                         children: [
                           Expanded(
                               child: TextFormField(
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Please enter some text';
-                              }
-                              return null;
-                            },
+                            // validator: (value) {
+                            //   if (value == null || value.isEmpty) {
+                            //     return 'Please enter some text';
+                            //   }
+                            //   return null;
+                            // },
                             onChanged: (value) {
-                              medLogController.setName(value);
+                              //  medLogController.setName(value);
                             },
                             decoration: InputDecoration(
                               hintText: 'Medicine Name',
