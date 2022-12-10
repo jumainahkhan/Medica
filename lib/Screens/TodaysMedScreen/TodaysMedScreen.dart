@@ -11,7 +11,7 @@ class TodaysMedScreen extends StatefulWidget {
 class _TodaysMedScreenState extends State<TodaysMedScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
         child: Scaffold(
       body: TodaysMedScreenBody(),
     ));
