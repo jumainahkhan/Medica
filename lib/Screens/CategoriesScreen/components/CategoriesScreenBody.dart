@@ -36,14 +36,14 @@ class _CategoriesScreenBodyState extends State<CategoriesScreenBody> {
   ];
   List<Map<String, dynamic>> prescriptions = [
     {
-      'clinic': 'XYZ Clinic',
+      'clinic': 'Wellness Dermatology',
       'dname': 'Dr. John Smith',
       'djob': 'Dermatologist',
-      'date': '12/12/2020',
-      'reasonforvisit': 'Skin Rash ',
+      'date': '11/11/2022',
+      'reasonforvisit': 'Acne treatment ',
     },
     {
-      'clinic': 'Wellness Clinic',
+      'clinic': 'Health Clinic',
       'dname': 'Dr. Rita Lancaster',
       'djob': 'Orthopaedic Surgeon',
       'date': '12/12/2020',
@@ -53,14 +53,14 @@ class _CategoriesScreenBodyState extends State<CategoriesScreenBody> {
       'clinic': 'Medsy Clinic',
       'dname': 'Dr. Piya Mitra',
       'djob': 'Gynaecologist',
-      'date': '12/12/2020',
+      'date': '10/01/2021',
       'reasonforvisit': 'Ultrasound',
     },
     {
       'clinic': 'Medal Clinic',
       'dname': 'Dr. Sanjay Malhotra',
       'djob': 'Physician',
-      'date': '12/12/2020',
+      'date': '09/12/2022',
       'reasonforvisit': 'Fever ',
     },
   ];

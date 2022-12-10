@@ -45,24 +45,40 @@ class _PrescriptionDetailsState extends State<PrescriptionDetails> {
               height: 1.h,
             ),
             Text(
-              'Doctor Name',
+              'Dr. John Smith',
               style: GoogleFonts.poppins(
                 color: Colors.black,
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
               ),
             ),
+            Text(
+              'Dermatologist',
+              style: GoogleFonts.poppins(
+                color: Colors.grey,
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            Text(
+              'Wellness Dermatology',
+              style: GoogleFonts.poppins(
+                color: Colors.grey,
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
             SizedBox(
               height: 1.h,
             ),
-            Text(
-              'Rs. 100',
-              style: GoogleFonts.poppins(
-                color: Colors.black,
-                fontSize: 30,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
+            // Text(
+            //   'Rs. 100',
+            //   style: GoogleFonts.poppins(
+            //     color: Colors.black,
+            //     fontSize: 30,
+            //     fontWeight: FontWeight.w600,
+            //   ),
+            // ),
             SizedBox(
               height: 2.h,
             ),
@@ -75,7 +91,7 @@ class _PrescriptionDetailsState extends State<PrescriptionDetails> {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
-                'Reason for Visit',
+                'Acne Treatment',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.poppins(
                   color: Colors.white,
@@ -88,7 +104,7 @@ class _PrescriptionDetailsState extends State<PrescriptionDetails> {
               height: 1.h,
             ),
             Text(
-              'Date of Visit',
+              '11-11-2022',
               style: GoogleFonts.poppins(
                 color: Colors.grey,
                 fontSize: 14,
@@ -149,19 +165,73 @@ class _PrescriptionDetailsState extends State<PrescriptionDetails> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 2.h),
-                        const Text('Medicine 1 '),
-                        const Text('0-0-1, BF, 5 days'),
+                        const Text(
+                          'Paracetamol',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 17,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        const Text(
+                          '0-0-1, BF, 5 days',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400),
+                        ),
                         SizedBox(height: 2.h),
-                        const Text('Medicine 1 '),
-                        const Text('0-0-1, BF, 5 days'),
+                        const Text(
+                          'Cetrizine',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 17,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        const Text(
+                          '1-1-1, AF, 3 days',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400),
+                        ),
                         SizedBox(height: 2.h),
-                        const Text('Medicine 1 '),
-                        const Text('0-0-1, BF, 5 days'),
+                        const Text(
+                          'Dolo 650',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 17,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        const Text(
+                          '1-0-1, AF, 3 days',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400),
+                        ),
                         SizedBox(height: 2.h),
-                        const Text('Medicine 1 '),
-                        const Text('0-0-1, BF, 5 days'),
-                        SizedBox(height: 2.h),
-                        const Text('Notes:'),
+                        const Text(
+                          'Ibuprofen',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 17,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        const Text(
+                          '1-0-1, AF, 3 days',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400),
+                        ),
+                        SizedBox(height: 1.h),
+                        // const Text(
+                        //   'Notes:',
+                        //   style: TextStyle(
+                        //       color: Colors.black,
+                        //       fontSize: 15,
+                        //       fontWeight: FontWeight.w400),
+                        // ),
                       ],
                     )),
                 SizedBox(height: 2.h),
