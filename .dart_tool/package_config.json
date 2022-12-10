@@ -182,6 +182,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/js-0.6.4",
       "packageUri": "lib/",
@@ -308,6 +314,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "simple_gesture_detector",
+      "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/simple_gesture_detector-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/Users/Saifu/Documents/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -344,6 +356,30 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "syncfusion_flutter_calendar",
+      "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/syncfusion_flutter_calendar-20.3.60",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "syncfusion_flutter_core",
+      "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/syncfusion_flutter_core-20.3.60",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "syncfusion_flutter_datepicker",
+      "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/syncfusion_flutter_datepicker-20.3.60",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "table_calendar",
+      "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/table_calendar-3.0.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "term_glyph",
       "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/term_glyph-1.2.1",
       "packageUri": "lib/",
@@ -352,6 +388,12 @@
     {
       "name": "test_api",
       "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_api-0.4.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "timezone",
+      "rootUri": "file:///C:/Users/Saifu/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/timezone-0.9.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -392,7 +434,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-12-10T01:45:46.017939Z",
+  "generated": "2022-12-10T02:50:36.386759Z",
   "generator": "pub",
   "generatorVersion": "2.18.5"
 }

@@ -59,21 +59,21 @@ Column buildMedDetail() {
                             value: morning,
                             onChanged: (value) {
                               morning = value!;
-                              medLogController.setMorning(value!);
+                              medLogController.setMorning(value);
                             },
                           ),
                           Checkbox(
                             value: afternoon,
                             onChanged: (value) {
                               afternoon = value!;
-                              medLogController.setAfternoon(value!);
+                              medLogController.setAfternoon(value);
                             },
                           ),
                           Checkbox(
                             value: night,
                             onChanged: (value) {
                               night = value!;
-                              medLogController.setNight(value!);
+                              medLogController.setNight(value);
                             },
                           ),
                         ],

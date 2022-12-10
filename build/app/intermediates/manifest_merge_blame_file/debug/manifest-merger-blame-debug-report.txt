@@ -13,19 +13,19 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/jumainahkhan/Documents/flutter/Medica-QuantumX/android/app/src/debug/AndroidManifest.xml:7:5-66
-15-->/Users/jumainahkhan/Documents/flutter/Medica-QuantumX/android/app/src/debug/AndroidManifest.xml:7:22-64
+15-->C:\Users\Saifu\Medica-QuantumX\android\app\src\debug\AndroidManifest.xml:7:5-66
+15-->C:\Users\Saifu\Medica-QuantumX\android\app\src\debug\AndroidManifest.xml:7:22-64
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->[:camera_android] /Users/jumainahkhan/Documents/flutter/Medica-QuantumX/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-65
-16-->[:camera_android] /Users/jumainahkhan/Documents/flutter/Medica-QuantumX/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-62
+16-->[:camera_android] C:\Users\Saifu\Medica-QuantumX\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-65
+16-->[:camera_android] C:\Users\Saifu\Medica-QuantumX\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-62
 17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-17-->[:camera_android] /Users/jumainahkhan/Documents/flutter/Medica-QuantumX/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-71
-17-->[:camera_android] /Users/jumainahkhan/Documents/flutter/Medica-QuantumX/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-68
+17-->[:camera_android] C:\Users\Saifu\Medica-QuantumX\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-71
+17-->[:camera_android] C:\Users\Saifu\Medica-QuantumX\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-68
 18
 19    <application
 20        android:name="android.app.Application"
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.6.0] /Users/jumainahkhan/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+21-->[androidx.core:core:1.6.0] C:\Users\Saifu\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 22        android:debuggable="true"
 23        android:icon="@mipmap/ic_launcher"
 24        android:label="medica" >
@@ -63,17 +63,17 @@
 56            android:value="2" />
 57
 58        <uses-library
-58-->[androidx.window:window:1.0.0-beta04] /Users/jumainahkhan/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+58-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 59            android:name="androidx.window.extensions"
-59-->[androidx.window:window:1.0.0-beta04] /Users/jumainahkhan/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+59-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
 60            android:required="false" />
-60-->[androidx.window:window:1.0.0-beta04] /Users/jumainahkhan/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+60-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
 61        <uses-library
-61-->[androidx.window:window:1.0.0-beta04] /Users/jumainahkhan/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+61-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
 62            android:name="androidx.window.sidecar"
-62-->[androidx.window:window:1.0.0-beta04] /Users/jumainahkhan/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+62-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
 63            android:required="false" />
-63-->[androidx.window:window:1.0.0-beta04] /Users/jumainahkhan/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+63-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
 64    </application>
 65
 66</manifest>
