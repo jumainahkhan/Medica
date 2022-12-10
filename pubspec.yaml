@@ -20,7 +20,8 @@ dependencies:
   heroicons: ^0.7.0
   hexcolor: ^3.0.1
   responsive_sizer: ^3.1.1
-
+  syncfusion_flutter_calendar: ^20.3.60
+  table_calendar: ^3.0.8
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -32,4 +33,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/Images/ 
+    - assets/Images/
