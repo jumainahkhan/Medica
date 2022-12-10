@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:medica/Screens/CategoriesScreen/components/PrescriptionDetail.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'dart:math';
 
@@ -97,6 +98,10 @@ class _CategoriesScreenBodyState extends State<CategoriesScreenBody> {
                 child: GestureDetector(
                   onTap: () {
                     randInt();
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PrescriptionDetails()));
                   },
                   child: SizedBox(
                     height: 20.h,
